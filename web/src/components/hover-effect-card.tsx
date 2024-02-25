@@ -23,7 +23,7 @@ export function HoverEffectCard({ items, className }: Props) {
   return (
     <div
       className={cn(
-        'xs:grid-cols-2 grid grid-cols-1 py-10 md:grid-cols-3 lg:grid-cols-4',
+        'grid grid-cols-1 py-10 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4',
         className
       )}
     >
@@ -59,9 +59,9 @@ export function HoverEffectCard({ items, className }: Props) {
             <div className="relative z-20 h-full w-full items-center overflow-hidden rounded-2xl border border-border bg-card p-8 transition duration-300 group-hover:border-primary">
               <div className="relative z-50">
                 <div className="flex flex-col items-center justify-center space-y-2 text-center">
-                  <h4 className="font-bold tracking-wide text-foreground">
+                  <span className="font-bold tracking-wide text-foreground">
                     {item.title}
-                  </h4>
+                  </span>
                   <Icon className="h-8 w-8" />
                 </div>
               </div>
