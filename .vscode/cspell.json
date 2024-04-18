@@ -40,6 +40,7 @@
     "db",
     "openai",
     "trpc",
+    "cloudinary",
 
     // For media files
     "webp",

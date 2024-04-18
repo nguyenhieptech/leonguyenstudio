@@ -48,13 +48,13 @@ const skills = [
   },
 ];
 
-export function InterestedTechSection() {
+export function InterestedTechStackSection() {
   return (
     <section className="flex w-full max-w-4xl flex-col items-center justify-center">
       <h2 className="text-center text-2xl font-bold underline decoration-primary underline-offset-[0.5rem] dark:decoration-secondary sm:text-start">
-        Tech stack I&#39;m focusing on
+        Tech stack I&#39;m interested in
       </h2>
-      <HoverEffectCard className="sm:mt-6" items={skills} />
+      <HoverEffectCard items={skills} />
     </section>
   );
 }

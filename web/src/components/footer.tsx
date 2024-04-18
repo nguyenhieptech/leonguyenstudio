@@ -49,7 +49,7 @@ export function Footer() {
       </h2>
       <div className="flex items-center space-x-5">
         {/* Social links */}
-        <div className="flex">
+        <nav className="flex">
           {socials.map((social) => {
             const SocialIcon = social.icon;
 
@@ -65,7 +65,7 @@ export function Footer() {
               </Link>
             );
           })}
-        </div>
+        </nav>
         <ThemeToggle />
       </div>
     </footer>
