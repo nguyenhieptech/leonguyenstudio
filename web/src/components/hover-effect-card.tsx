@@ -1,12 +1,12 @@
 // https://ui.aceternity.com/components/card-hover-effect
 
-'use client';
+"use client";
 
-import { cn } from '@/lib/utils';
-import { AnimatePresence, motion } from 'framer-motion';
-import Link from 'next/link';
-import { useState } from 'react';
-import { IconType } from 'react-icons';
+import { cn } from "@/lib/utils";
+import { AnimatePresence, motion } from "framer-motion";
+import Link from "next/link";
+import { useState } from "react";
+import { IconType } from "react-icons";
 
 type Props = {
   items: {
@@ -23,7 +23,7 @@ export function HoverEffectCard({ items, className }: Props) {
   return (
     <div
       className={cn(
-        'grid grid-cols-1 py-10 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4',
+        "grid grid-cols-1 py-10 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4",
         className
       )}
     >

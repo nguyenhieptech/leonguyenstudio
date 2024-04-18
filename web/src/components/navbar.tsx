@@ -1,36 +1,36 @@
-import { ThemeToggle } from '@/components/theme-toggle';
-import { Facebook, Github, Instagram, Linkedin, Twitter } from 'lucide-react';
-import Link from 'next/link';
+import { ThemeToggle } from "@/components/theme-toggle";
+import { Facebook, Github, Instagram, Linkedin, Twitter } from "lucide-react";
+import Link from "next/link";
 
 const socials = [
   {
-    id: '1',
-    link: 'https://github.com/nguyenhieptech',
-    ariaLabel: 'GitHub link',
+    id: "1",
+    link: "https://github.com/nguyenhieptech",
+    ariaLabel: "GitHub link",
     icon: Github,
   },
   {
-    id: '2',
-    link: 'https://twitter.com/hiepnguyenhaha',
-    ariaLabel: 'Twitter link',
+    id: "2",
+    link: "https://twitter.com/hiepnguyenhaha",
+    ariaLabel: "Twitter link",
     icon: Twitter,
   },
   {
-    id: '3',
-    link: 'https://www.linkedin.com/in/hiep-nguyen-tech',
-    ariaLabel: 'Linkedin link',
+    id: "3",
+    link: "https://www.linkedin.com/in/hiep-nguyen-tech",
+    ariaLabel: "Linkedin link",
     icon: Linkedin,
   },
   {
-    id: '4',
-    link: 'https://www.facebook.com/nguyenhieptech',
-    ariaLabel: 'Facebook link',
+    id: "4",
+    link: "https://www.facebook.com/nguyenhieptech",
+    ariaLabel: "Facebook link",
     icon: Facebook,
   },
   {
-    id: '5',
-    link: 'https://www.instagram.com/nguyenhieptech',
-    ariaLabel: 'Instagram link',
+    id: "5",
+    link: "https://www.instagram.com/nguyenhieptech",
+    ariaLabel: "Instagram link",
     icon: Instagram,
   },
 ];

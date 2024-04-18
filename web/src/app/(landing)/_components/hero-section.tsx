@@ -3,7 +3,7 @@ import {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from '@/components/ui/tooltip';
+} from "@/components/ui/tooltip";
 
 export function HeroSection() {
   return (
@@ -13,7 +13,7 @@ export function HeroSection() {
         <div className="space-y-1 text-foreground/60 md:text-lg">
           <p>or Hiep Nguyen.</p>
           <div>
-            I&#39;m a{' '}
+            I&#39;m a{" "}
             <TooltipProvider delayDuration={250}>
               <Tooltip>
                 <TooltipTrigger className="transition duration-700 hover:translate-y-1">
@@ -26,17 +26,17 @@ export function HeroSection() {
                     <p>Actually, a Pull-stack Developer.</p>
                     <p>I just pull code from the internet</p>
                     <p>
-                      and put it into my code{' '}
+                      and put it into my code{" "}
                       <span className="text-lg text-white opacity-100">🤫</span>
                     </p>
                   </div>
                 </TooltipContent>
               </Tooltip>
-            </TooltipProvider>{' '}
+            </TooltipProvider>{" "}
             based in Hanoi, Vietnam.
           </div>
           <p>
-            If you kind of like sarcastic humor - that&#39;s me{' '}
+            If you kind of like sarcastic humor - that&#39;s me{" "}
             <span className="text-lg text-white md:text-xl">😌</span>
           </p>
         </div>

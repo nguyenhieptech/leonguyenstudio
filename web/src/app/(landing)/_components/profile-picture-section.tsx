@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import React from 'react';
+import Image from "next/image";
+import React from "react";
 
 export function ProfilePictureSection() {
   return (
@@ -14,7 +14,7 @@ export function ProfilePictureSection() {
       <p className="mt-6 max-w-xl text-center text-sm leading-6 text-foreground/60">
         Me lying down thinking: &quot;You don&#39;t learn JavaScript to have fun, you
         learn it to make money, to use that money to spend time having fun learning
-        JavaScript to make more money.&quot;{' '}
+        JavaScript to make more money.&quot;{" "}
         <span className="text-base text-white opacity-100">🤔</span>
       </p>
     </section>

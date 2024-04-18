@@ -1,8 +1,8 @@
-import { Footer } from '@/components/footer';
-import { Navbar } from '@/components/navbar';
-import { HeroSection } from './_components/hero-section';
-import { InterestedTechStackSection } from './_components/interested-tech-stack-section';
-import { ProfilePictureSection } from './_components/profile-picture-section';
+import { Footer } from "@/components/footer";
+import { Navbar } from "@/components/navbar";
+import { HeroSection } from "./_components/hero-section";
+import { InterestedTechStackSection } from "./_components/interested-tech-stack-section";
+import { ProfilePictureSection } from "./_components/profile-picture-section";
 
 export default function HomeLandingPage() {
   return (
