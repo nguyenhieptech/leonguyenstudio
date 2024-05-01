@@ -9,16 +9,16 @@ export function HeroSection() {
   return (
     <section className="flex w-full max-w-4xl flex-col-reverse items-center justify-between md:flex-row md:space-x-8">
       <div className="items-center space-y-8 text-center md:w-[60%] md:space-y-4 md:text-start">
-        <p className="text-6xl font-bold">Hi, I&#39;m Leo Nguyen</p>
-        <div className="space-y-1 text-foreground/60 md:text-lg">
+        <p className="text-6xl font-bold">{`Hi, I'm Leo Nguyen`}</p>
+        <div className="space-y-1 text-foreground/70">
           <p>or Hiep Nguyen.</p>
           <div>
-            I&#39;m a{" "}
-            <TooltipProvider delayDuration={250}>
+            {`I'm a `}
+            <TooltipProvider delayDuration={100}>
               <Tooltip>
-                <TooltipTrigger className="transition duration-700 hover:translate-y-1">
-                  <span className="animate-pulse cursor-pointer px-0.5 font-semibold text-primary dark:text-secondary">
-                    Full-stack Developer
+                <TooltipTrigger className="transition duration-300 hover:translate-y-1">
+                  <span className="cursor-pointer px-0.5 font-semibold text-primary hover:opacity-90 dark:text-secondary ">
+                    Software Developer
                   </span>
                 </TooltipTrigger>
                 <TooltipContent>
@@ -36,8 +36,12 @@ export function HeroSection() {
             based in Hanoi, Vietnam.
           </div>
           <p>
-            If you kind of like sarcastic humor - that&#39;s me{" "}
-            <span className="text-lg text-white md:text-xl">😌</span>
+            I would define my interests as lying at the intersection of design,
+            engineering, music and business.
+          </p>
+          <p>
+            {`If you kind of like sarcastic humor - yeah, that's me `}
+            <span className="text-foreground">😌</span>
           </p>
         </div>
       </div>
