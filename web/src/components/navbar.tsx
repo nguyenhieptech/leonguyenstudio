@@ -37,33 +37,26 @@ const socials = [
 
 export function Navbar() {
   return (
-    <nav className="z-10 flex w-full max-w-5xl flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0">
-      {/* Logo */}
-      <h1 className="cursor-pointer text-center text-lg font-bold underline decoration-primary underline-offset-4 transition duration-500 hover:opacity-70 dark:decoration-secondary sm:text-start sm:text-2xl">
-        Leo&#39;s Portfolio 🤷🏻‍♂️
-      </h1>
+    <div className="flex items-center space-x-5">
+      {/* Social links */}
+      <nav className="flex">
+        {socials.map((social) => {
+          const SocialIcon = social.icon;
 
-      <div className="flex items-center space-x-5">
-        {/* Social links */}
-        <div className="flex">
-          {socials.map((social) => {
-            const SocialIcon = social.icon;
-
-            return (
-              <Link
-                key={social.id}
-                className="cursor-pointer p-2 transition duration-500 hover:-translate-y-2"
-                target="_blank"
-                href={social.link}
-                aria-label={social.ariaLabel}
-              >
-                <SocialIcon />
-              </Link>
-            );
-          })}
-        </div>
-        <ThemeToggle />
-      </div>
-    </nav>
+          return (
+            <Link
+              key={social.id}
+              className="cursor-pointer p-2 transition duration-500 hover:-translate-y-2"
+              target="_blank"
+              href={social.link}
+              aria-label={social.ariaLabel}
+            >
+              <SocialIcon />
+            </Link>
+          );
+        })}
+      </nav>
+      <ThemeToggle />
+    </div>
   );
 }
