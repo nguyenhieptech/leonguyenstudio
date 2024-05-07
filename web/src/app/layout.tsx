@@ -6,8 +6,8 @@ import "./globals.css";
 const font = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Leo's Portfolio",
-  description: "Dead simple portfolio for a handsome funny dev.",
+  title: "Leo Nguyen",
+  description: "Leo Nguyen Zone",
 };
 
 export default function RootLayout({

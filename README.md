@@ -1,18 +1,13 @@
-# Leo's Portfolio
-
-Simple, personal portfolio for a handsome funny dev. Literally.
-
-Install packages:
+# Leo Nguyen 💻
 
 ```bash
-cd web # Open terminal in folder "web"
+# Open terminal in folder "web"
+cd web
 
-pnpm i # Install packages
-```
+# Install packages
+pnpm i
 
-Run the development server:
-
-```bash
+# Run the development server
 pnpm dev
 ```
 
