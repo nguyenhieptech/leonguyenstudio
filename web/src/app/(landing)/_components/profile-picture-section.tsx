@@ -1,13 +1,20 @@
+"use client";
+
+import { motion } from "framer-motion";
 import Image from "next/image";
-import React from "react";
 
 export function ProfilePictureSection() {
   return (
-    <section className="flex w-full max-w-4xl flex-col items-center justify-center">
+    <motion.section
+      className="flex w-full max-w-4xl flex-col items-center justify-center"
+      initial={{ opacity: 0, y: -10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, delay: 1.3 }}
+    >
       <Image
         src="https://res.cloudinary.com/dng1meo0n/image/upload/fl_preserve_transparency/v1713448500/leo-lying-down.jpg"
-        className="rounded-2xl sm:mt-16"
-        alt="Profile Picture"
+        className="rounded-lg sm:mt-16"
+        alt="profile picture"
         width={450}
         height={600}
       />
@@ -17,6 +24,6 @@ export function ProfilePictureSection() {
         JavaScript to make more money.&quot;{" "}
         <span className="text-base text-white opacity-100">🤔</span>
       </p>
-    </section>
+    </motion.section>
   );
 }

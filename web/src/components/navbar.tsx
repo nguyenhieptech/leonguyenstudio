@@ -11,8 +11,8 @@ const socials = [
   },
   {
     id: "2",
-    link: "https://twitter.com/hiepnguyenhaha",
-    ariaLabel: "Twitter link",
+    link: "https://x.com/hiepnguyenhaha",
+    ariaLabel: "X link",
     icon: Twitter,
   },
   {
@@ -46,7 +46,7 @@ export function Navbar() {
           return (
             <Link
               key={social.id}
-              className="cursor-pointer p-2 transition duration-500 hover:-translate-y-2"
+              className="cursor-pointer p-2 transition duration-500 hover:-translate-y-1"
               target="_blank"
               href={social.link}
               aria-label={social.ariaLabel}
