@@ -10,7 +10,7 @@ export default function NotFoundPage() {
       <main className="h-[60vh] px-6 py-24 sm:py-32 lg:h-[70vh] lg:px-8">
         <div className="text-center">
           <h1 className="text-3xl font-bold tracking-tight sm:text-5xl">
-            Looks like this page is unavailable
+            Oops, this page is unavailable 😵
           </h1>
           <p className="mt-4 text-base leading-7">
             {`But the good news is - you don't have to be here 👏🏻`}

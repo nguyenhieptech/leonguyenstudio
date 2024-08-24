@@ -1,11 +1,8 @@
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
+import { PropsWithChildren } from "react";
 
-export default function LayoutPage({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function LayoutPage({ children }: PropsWithChildren) {
   return (
     <div className="mx-auto mt-8 flex w-full max-w-6xl flex-col items-center px-20 md:mt-16">
       <Header />

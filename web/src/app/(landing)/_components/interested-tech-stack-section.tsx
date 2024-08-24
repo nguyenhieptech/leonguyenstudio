@@ -1,6 +1,7 @@
 "use client";
 
 import { HoverEffectCard } from "@/components/hover-effect-card";
+import { motion } from "framer-motion";
 import { FaNodeJs, FaPython, FaReact } from "react-icons/fa";
 import { SiFastapi, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { TbBrandNextjs, TbBrandReactNative } from "react-icons/tb";
@@ -51,10 +52,21 @@ const skills = [
 export function InterestedTechStackSection() {
   return (
     <section className="flex w-full max-w-4xl flex-col items-center justify-center">
-      <h2 className="text-center text-2xl font-bold underline decoration-primary underline-offset-[0.5rem] dark:decoration-secondary sm:text-start">
-        Tech stack I&#39;m interested in
-      </h2>
-      <HoverEffectCard items={skills} />
+      <motion.h2
+        className="text-center text-2xl font-bold underline decoration-primary underline-offset-[0.5rem] dark:decoration-secondary sm:text-start"
+        initial={{ opacity: 0, y: -5 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4 }}
+      >
+        {`Tech stack I'm interested in`}
+      </motion.h2>
+      <motion.div
+        initial={{ opacity: 0, y: -5 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4 }}
+      >
+        <HoverEffectCard items={skills} />
+      </motion.div>
     </section>
   );
 }
