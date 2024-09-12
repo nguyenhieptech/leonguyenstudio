@@ -1,7 +1,5 @@
-"use client";
-
 import { Navbar } from "@/components/navbar";
-import { motion } from "framer-motion";
+import * as motion from "framer-motion/client";
 import Link from "next/link";
 
 export function Header() {

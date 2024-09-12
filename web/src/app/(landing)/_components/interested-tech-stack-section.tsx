@@ -1,7 +1,7 @@
 "use client";
 
 import { HoverEffectCard } from "@/components/hover-effect-card";
-import { motion } from "framer-motion";
+import * as motion from "framer-motion/client";
 import { FaNodeJs, FaPython, FaReact } from "react-icons/fa";
 import { SiFastapi, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { TbBrandNextjs, TbBrandReactNative } from "react-icons/tb";
