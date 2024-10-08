@@ -6,9 +6,7 @@ export function Footer() {
       {/* Logo */}
       <h2 className="flex cursor-pointer items-center space-x-1 text-center text-sm transition duration-500 hover:opacity-80 sm:text-start">
         <p>Made for</p>
-        <p className="animate-bounce font-bold text-primary duration-1000 dark:text-secondary">
-          fun
-        </p>
+        <p className="font-bold text-primary dark:text-secondary">fun</p>
         <span>by</span>
         <span className="font-semibold text-primary dark:text-secondary">Leo Nguyen</span>
       </h2>

@@ -3,8 +3,8 @@
 import { HoverEffectCard } from "@/components/hover-effect-card";
 import * as motion from "framer-motion/client";
 import { FaNodeJs, FaPython, FaReact } from "react-icons/fa";
-import { SiFastapi, SiTailwindcss, SiTypescript } from "react-icons/si";
-import { TbBrandNextjs, TbBrandReactNative } from "react-icons/tb";
+import { SiTailwindcss, SiTypescript } from "react-icons/si";
+import { TbBrandGolang } from "react-icons/tb";
 
 const skills = [
   {
@@ -18,6 +18,11 @@ const skills = [
     icon: FaPython,
   },
   {
+    title: "Go",
+    link: "https://go.dev",
+    icon: TbBrandGolang,
+  },
+  {
     title: "Tailwind CSS",
     link: "https://tailwindcss.com",
     icon: SiTailwindcss,
@@ -28,24 +33,9 @@ const skills = [
     icon: FaReact,
   },
   {
-    title: "React Native",
-    link: "https://reactnative.dev",
-    icon: TbBrandReactNative,
-  },
-  {
-    title: "NextJS",
-    link: "https://nextjs.org",
-    icon: TbBrandNextjs,
-  },
-  {
     title: "NodeJS",
-    link: "https://nodejs.org/en/learn/getting-started/introduction-to-nodejs",
+    link: "https://nodejs.org/en",
     icon: FaNodeJs,
-  },
-  {
-    title: "FastAPI",
-    link: "https://fastapi.tiangolo.com/",
-    icon: SiFastapi,
   },
 ];
 
@@ -58,7 +48,7 @@ export function InterestedTechStackSection() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4 }}
       >
-        {`Tech stack I'm interested in`}
+        {`Tech ecosystem I'm currently interested in`}
       </motion.h2>
       <motion.div
         initial={{ opacity: 0, y: -5 }}
