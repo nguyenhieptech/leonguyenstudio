@@ -22,10 +22,7 @@ export function HoverEffectCard({ items, className }: Props) {
 
   return (
     <div
-      className={cn(
-        "grid grid-cols-1 py-10 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4",
-        className
-      )}
+      className={cn("grid grid-cols-1 py-10 xs:grid-cols-2 md:grid-cols-3", className)}
     >
       {items.map((item, index) => {
         const Icon = item.icon;
