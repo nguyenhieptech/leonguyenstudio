@@ -41,6 +41,8 @@
     "openai",
     "trpc",
     "cloudinary",
+    "turbopack",
+    "leonguyenstudio",
 
     // For media files
     "webp",
