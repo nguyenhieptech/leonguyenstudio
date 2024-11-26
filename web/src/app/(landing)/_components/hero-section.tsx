@@ -11,7 +11,7 @@ export function HeroSection() {
     <section className="flex w-full max-w-4xl flex-col-reverse items-center justify-between md:flex-row md:space-x-8">
       <div className="items-center space-y-8 text-center md:w-[60%] md:space-y-4 md:text-start">
         <motion.p
-          className="text-4xl font-bold md:text-5xl"
+          className="text-4xl font-extrabold md:text-5xl"
           initial={{ opacity: 0, y: -5 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5, delay: 0.3 }}

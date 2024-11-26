@@ -12,7 +12,7 @@ export function Header() {
     >
       <Link href="/">
         <h1 className="cursor-pointer text-center text-lg font-bold transition duration-500 hover:opacity-70 sm:text-start sm:text-2xl">
-          Leo Nguyen 🤷🏻‍♂️
+          leonguyenstudio 🤷🏻‍♂️
         </h1>
       </Link>
       <Navbar />
