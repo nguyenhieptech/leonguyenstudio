@@ -1,4 +1,3 @@
-import { ThemeToggle } from "@/components/theme-toggle";
 import { Facebook, Github, Instagram, Linkedin, Twitter } from "lucide-react";
 import Link from "next/link";
 
@@ -56,7 +55,6 @@ export function Navbar() {
           );
         })}
       </nav>
-      <ThemeToggle />
     </div>
   );
 }
