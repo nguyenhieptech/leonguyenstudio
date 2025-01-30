@@ -1,3 +1,5 @@
+// https://ui.shadcn.com/docs/dark-mode/next#add-a-mode-toggle
+
 "use client";
 
 import { Button } from "@/components/ui/button";

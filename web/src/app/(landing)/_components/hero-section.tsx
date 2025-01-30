@@ -14,54 +14,47 @@ export function HeroSection() {
           className="text-4xl font-extrabold md:text-5xl"
           initial={{ opacity: 0, y: -5 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.5, delay: 0.3 }}
+          transition={{ duration: 1.5, delay: 0.4 }}
         >
-          {`I'm Leo Nguyen 👋🏻`}
+          I&#39;m Leo Nguyen
         </motion.p>
         <div className="space-y-1 text-foreground/70">
           <motion.div
+            className="space-y-1"
             initial={{ opacity: 0, y: -5 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.5, delay: 0.4 }}
           >
-            {"a "}
-            <TooltipProvider delayDuration={100}>
-              <Tooltip>
-                <TooltipTrigger className="transition duration-300">
-                  <span className="cursor-pointer px-0.5 font-semibold text-primary hover:opacity-90 dark:text-secondary">
-                    software engineer
-                  </span>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <div className="space-y-1 p-3 pt-4 text-center text-sm text-foreground/80">
-                    <p>Actually, a Pull-stack Developer.</p>
-                    <p>I just pull code from the internet</p>
+            <div>
+              a{" "}
+              <TooltipProvider delayDuration={100}>
+                <Tooltip>
+                  <TooltipTrigger className="transition duration-300">
+                    <span className="cursor-pointer px-0.5 font-semibold text-primary transition duration-300 hover:opacity-70 dark:text-secondary">
+                      software engineer
+                    </span>
+                  </TooltipTrigger>
+                  <TooltipContent className="space-y-1 px-5 py-3 text-center text-sm text-foreground/80">
+                    <p className="pt-1">Actually, a pull-stack developer,</p>
+                    <p className="pt-1">like, I just pull code from the internet</p>
                     <p>
                       and put it into my code{" "}
                       <span className="text-lg text-white opacity-100">🤫</span>
                     </p>
-                  </div>
-                </TooltipContent>
-              </Tooltip>
-            </TooltipProvider>{" "}
-            based in Hanoi, Vietnam.
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>{" "}
+              based in Hanoi, Vietnam.
+            </div>
+            <p>
+              I would define my interests as lying at the intersection of design,
+              engineering, music and business.
+            </p>
+            <p>
+              If you kind of enjoy sarcastic humor - yeah, that&#39;s me
+              <span className="text-foreground"> 😌</span>
+            </p>
           </motion.div>
-          <motion.p
-            initial={{ opacity: 0, y: -5 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.5, delay: 0.5 }}
-          >
-            I would define my interests as lying at the intersection of design,
-            engineering, music and business.
-          </motion.p>
-          <motion.p
-            initial={{ opacity: 0, y: -5 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.5, delay: 0.6 }}
-          >
-            {`If you kind of enjoy sarcastic humor - yeah, that's me `}
-            <span className="text-foreground">😌</span>
-          </motion.p>
         </div>
       </div>
 
@@ -69,7 +62,7 @@ export function HeroSection() {
         className="group relative mt-24 h-72 cursor-pointer space-y-3 md:mt-0 md:w-72"
         initial={{ opacity: 0, y: -5 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.5, delay: 0.3 }}
+        transition={{ duration: 1.5, delay: 0.4 }}
       >
         <div className="flex gap-5">
           <div className="h-24 w-24 rounded-2xl bg-primary duration-3000 animate-in slide-in-from-top-12 md:h-32 md:w-32" />

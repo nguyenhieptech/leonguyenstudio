@@ -5,7 +5,7 @@ export function ProfilePictureSection() {
   return (
     <motion.section
       className="flex w-full max-w-4xl flex-col items-center justify-center"
-      initial={{ opacity: 0, y: -10 }}
+      initial={{ opacity: 0, y: -8 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, delay: 1.3 }}
     >
@@ -15,11 +15,12 @@ export function ProfilePictureSection() {
         alt="profile picture"
         width={450}
         height={600}
+        priority={true}
       />
       <p className="mt-6 max-w-xl text-center text-sm leading-6 text-foreground/60">
-        Me lying down thinking: &quot;You don&#39;t learn JavaScript to have fun, you
-        learn it to make money, to use that money to spend time having fun learning
-        JavaScript to make more money.&quot;{" "}
+        Me lying down at an event thinking: &quot;You don&#39;t learn JavaScript to have
+        fun, you learn it to make money, to use that money to spend time having fun
+        learning JavaScript to make more money.&quot;{" "}
         <span className="text-base text-white opacity-100">🤔</span>
       </p>
     </motion.section>
