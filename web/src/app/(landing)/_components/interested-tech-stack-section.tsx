@@ -9,32 +9,32 @@ import { TbBrandGolang } from "react-icons/tb";
 const skills = [
   {
     title: "TypeScript",
-    link: "https://www.typescriptlang.org",
+    link: "https://www.typescriptlang.org/",
     icon: SiTypescript,
   },
   {
-    title: "Python",
-    link: "https://www.python.org",
-    icon: FaPython,
-  },
-  {
     title: "Go",
-    link: "https://go.dev",
+    link: "https://go.dev/",
     icon: TbBrandGolang,
   },
   {
+    title: "Python",
+    link: "https://www.python.org/",
+    icon: FaPython,
+  },
+  {
     title: "Tailwind CSS",
-    link: "https://tailwindcss.com",
+    link: "https://tailwindcss.com/",
     icon: SiTailwindcss,
   },
   {
     title: "React",
-    link: "https://react.dev",
+    link: "https://react.dev/",
     icon: FaReact,
   },
   {
     title: "NodeJS",
-    link: "https://nodejs.org/en",
+    link: "https://nodejs.org/en/",
     icon: FaNodeJs,
   },
 ];
@@ -46,14 +46,14 @@ export function InterestedTechStackSection() {
         className="text-center text-2xl font-bold underline decoration-primary underline-offset-[0.5rem] dark:decoration-secondary sm:text-start"
         initial={{ opacity: 0, y: -5 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.4 }}
+        transition={{ duration: 0.4, delay: 1.5 }}
       >
         {`Tech ecosystem I'm currently interested in`}
       </motion.h2>
       <motion.div
         initial={{ opacity: 0, y: -5 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.4 }}
+        transition={{ duration: 0.7, delay: 1.5 }}
       >
         <HoverEffectCard items={skills} />
       </motion.div>
