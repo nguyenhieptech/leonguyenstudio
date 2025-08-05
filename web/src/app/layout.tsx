@@ -1,5 +1,4 @@
-import { SmoothScrollProvider } from "@/components/smooth-scroll-provider";
-import { ThemeProvider } from "@/components/theme-provider";
+import { AppProvider } from "@/components/providers/app-provider";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -15,16 +14,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={font.className}>
-        <SmoothScrollProvider>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="dark"
-            enableSystem
-            disableTransitionOnChange
-          >
-            {children}
-          </ThemeProvider>
-        </SmoothScrollProvider>
+        <AppProvider>{children}</AppProvider>
       </body>
     </html>
   );
