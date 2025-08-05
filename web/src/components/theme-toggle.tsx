@@ -12,6 +12,9 @@ import {
 import { MoonIcon, SunIcon } from "lucide-react";
 import { useTheme } from "next-themes";
 
+/**
+ * @see https://ui.shadcn.com/docs/dark-mode/next#add-a-mode-toggle
+ */
 export function ThemeToggle() {
   const { setTheme } = useTheme();
 

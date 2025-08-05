@@ -1,10 +1,11 @@
-// https://ui.shadcn.com/docs/dark-mode/next#create-a-theme-provider
-
 "use client";
 
 import { ThemeProvider as NextThemesProvider } from "next-themes";
 import * as React from "react";
 
+/**
+ * @see https://ui.shadcn.com/docs/dark-mode/next#create-a-theme-provider
+ */
 export function ThemeProvider({
   children,
   ...props

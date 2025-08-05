@@ -1,5 +1,3 @@
-// https://ui.aceternity.com/components/card-hover-effect
-
 "use client";
 
 import { cn } from "@/lib/utils";
@@ -17,6 +15,9 @@ type Props = {
   className?: string;
 };
 
+/**
+ * @see https://ui.aceternity.com/components/card-hover-effect
+ */
 export function HoverEffectCard({ items, className }: Props) {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
