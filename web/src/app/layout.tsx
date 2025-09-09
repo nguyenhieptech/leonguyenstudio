@@ -1,5 +1,6 @@
 import "./globals.css";
 import { AppProvider } from "@/components/providers/app-provider";
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
@@ -15,6 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" suppressHydrationWarning>
       <body className={font.className}>
         <AppProvider>{children}</AppProvider>
+        <Analytics />
       </body>
     </html>
   );
