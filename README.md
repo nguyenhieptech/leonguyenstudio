@@ -16,8 +16,11 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Docker
 
 ```bash
-# Build the image
+# Build the image (dev)
 docker build -t leonguyenstudio .
+
+# Build the image (production)
+docker build --target runner -t leonguyenstudio .
 
 # Create and run the container for the first time
 docker run --name leonguyenstudio -p 3000:3000 leonguyenstudio
