@@ -1,4 +1,4 @@
-import { Facebook, Github, Instagram, Linkedin, Twitter } from "lucide-react";
+import { Github, Linkedin, Twitter } from "lucide-react";
 import Link from "next/link";
 
 const socials = [
@@ -19,18 +19,6 @@ const socials = [
     link: "https://www.linkedin.com/in/hiep-nguyen-tech",
     ariaLabel: "Linkedin link",
     icon: Linkedin,
-  },
-  {
-    id: "4",
-    link: "https://www.facebook.com/nguyenhieptech",
-    ariaLabel: "Facebook link",
-    icon: Facebook,
-  },
-  {
-    id: "5",
-    link: "https://www.instagram.com/nguyenhieptech",
-    ariaLabel: "Instagram link",
-    icon: Instagram,
   },
 ];
 

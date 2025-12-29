@@ -9,22 +9,15 @@ import * as motion from "framer-motion/client";
 export function HeroSection() {
   return (
     <section className="flex w-full max-w-4xl flex-col-reverse items-center justify-between md:flex-row md:space-x-8">
-      <div className="items-center space-y-8 text-center md:w-[60%] md:space-y-4 md:text-start">
-        <motion.p
-          className="text-4xl font-extrabold md:text-5xl"
-          initial={{ opacity: 0, y: -5 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.5, delay: 0.4 }}
-        >
-          I&#39;m Leo Nguyen
-        </motion.p>
+      <motion.div
+        className="items-center space-y-8 text-center md:w-[60%] md:space-y-4 md:text-start"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.3, delay: 0.4 }}
+      >
+        <p className="text-4xl font-extrabold md:text-5xl">{`I'm Leo Nguyen`}</p>
         <div className="space-y-1 text-foreground/70">
-          <motion.div
-            className="space-y-1"
-            initial={{ opacity: 0, y: -5 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.5, delay: 0.4 }}
-          >
+          <div className="space-y-1">
             <div>
               a{" "}
               <TooltipProvider delayDuration={100}>
@@ -51,17 +44,17 @@ export function HeroSection() {
               engineering, music and business.
             </p>
             <p>
-              If you kind of enjoy sarcastic humor - yeah, that&#39;s me
+              {`If you kind of enjoy sarcastic humor - yeah, that's me`}
               <span className="text-foreground"> 😌</span>
             </p>
-          </motion.div>
+          </div>
         </div>
-      </div>
+      </motion.div>
 
       <motion.div
         className="group relative mt-24 h-72 cursor-pointer space-y-3 md:mt-0 md:w-72"
-        initial={{ opacity: 0, y: -5 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         transition={{ duration: 1.5, delay: 0.4 }}
       >
         <div className="flex gap-5">
